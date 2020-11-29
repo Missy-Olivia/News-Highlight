@@ -1,9 +1,13 @@
 class Config:
-    News_Api_link = 'http://newsapi.org/v2/everything?domains=wsj.com&apiKey={}'
+    NEWS_API_LINK = 'http://newsapi.org/v2/everything?domains=wsj.com&apiKey={}'
 
-class DevConfig:
-    debug = True
 
-class ProdConfig:
+class ProdConfig(Config):
 
     pass
+
+class DevConfig(Config):
+    
+    DEBUG = True
+
+

@@ -4,10 +4,10 @@ from .models import news
 News = news.News
 
 # Getting api key
-api_key = app.config['News_Api_key']
+api_key = app.config['NEWS_API_KEY']
 
 # Getting the movie base url
-base_url = app.config["News_Api_link"]
+base_url = app.config["NEWS_API_LINK"]
 
 def my_news():
     '''
@@ -35,4 +35,4 @@ def my_news():
             news_object = News(source,author,title,description,url,poster)
             news_results.append(news_object)
 
-        return movie_results
+        return news_results
