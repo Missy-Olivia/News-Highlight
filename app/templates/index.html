@@ -1,1 +1,12 @@
-<h1>Catch me if you can</h1>
+{% extends 'base.html'%}
+
+{% block content %}
+<h1>Headlines</h1>
+{% for item in data %}
+<li>
+    {{item.title}}
+</li>
+{% endfor %}
+
+{% endblock %}
+ 

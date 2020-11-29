@@ -8,4 +8,4 @@ def index():
     print(myNewsData)
 
 
-    return render_template('index.html')
+    return render_template('index.html', data = myNewsData)
