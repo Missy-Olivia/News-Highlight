@@ -1,5 +1,5 @@
 class Config:
-    News_Api_link = 'http://newsapi.org/v2/everything?q=bitcoin&from=2020-10-28&sortBy=publishedAt&apiKey={}'
+    News_Api_link = 'http://newsapi.org/v2/everything?domains=wsj.com&apiKey={}'
 
 class DevConfig:
     debug = True
