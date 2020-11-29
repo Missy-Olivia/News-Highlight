@@ -7,5 +7,5 @@ def index():
     myNewsData = my_news()
     print(myNewsData)
 
-
-    return render_template('index.html', data = myNewsData)
+    title = "News Highlights"
+    return render_template('index.html',title = title, data = myNewsData)
