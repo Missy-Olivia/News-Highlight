@@ -1,8 +1,9 @@
 from app import app
 import urllib.request,json
 from datetime import datetime
-from .models import news_source
+from .models import news_source,articles
 News = news_source.News
+Articles = articles.Articles
 
 # Getting api key
 api_key = app.config['NEWS_API_KEY']
