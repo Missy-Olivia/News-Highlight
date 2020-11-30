@@ -1,5 +1,5 @@
 # News HighLight
-This is a web appliction that displays a list of news sources from around the world.
+This is a web appliction that displays a list of news articles from different sources.
 
 ## Author 
 [Ngabire Olivia Missy](https://github.com/Missy-Olivia)
@@ -10,7 +10,6 @@ With the application, a user will be able to:
 
 See various news sources and select the ones they prefer.
 See all news sources from the source they selected.
-See Image description and time the news article was created.
 Click on an article and read it fully from the news source
 
 ## Link
