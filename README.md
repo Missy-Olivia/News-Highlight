@@ -4,7 +4,7 @@ This is a web appliction that displays a list of news sources from around the wo
 ## Author 
 [Ngabire Olivia Missy](https://github.com/Missy-Olivia)
 
-## description
+## Description
 
 With the application, a user will be able to:
 
@@ -23,10 +23,10 @@ Read an entire article	`Click an article`	Redirected to the news source's site t
 
 ### Technologies Used
 
-Python v3.6
-Boostrap
-Css
-Flask
+Python v3.6 <br>
+Boostrap <br>
+Css <br>
+Flask <br>
 
 ### Copyright and License
 ```
