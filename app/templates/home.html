@@ -20,6 +20,7 @@
             h3{
                 text-transform: uppercase;
                 text-decoration: underline;
+                color:rgba(0, 153, 255, 0.918);
             }
             </style>
         {% endblock %}
@@ -30,28 +31,28 @@
             {% block content%}
             <div class="container">
                 <!-- Business News Section  -->
-                <h3 class="text-center">  Business News </h3>
+                <h3 id = "biz" class="text-center">  Business News </h3>
                 <hr>
 
                 {{ macro.displaySourceList(business_sources)}}
 
                 <!-- Tech News Section  -->
          
-                <h3 class="text-center">  Technology News </h3>
+                <h3 id = "tech" class="text-center">  Technology News </h3>
                  <hr>
 
                 {{ macro.displaySourceList(tech_sources)}}
 
                 <!-- Entertainment News Section  -->
          
-                <h3 class="text-center">  Entertainment News </h3>
+                <h3 id = "buzz" class="text-center">  Entertainment News </h3>
                 <hr>
 
                 {{ macro.displaySourceList(entertainment_sources)}}
 
                 <!-- Sport News Section  -->
          
-                <h3 class="text-center">  Sports News </h3>
+                <h3 id = "spor" class="text-center">  Sports News </h3>
                 <hr>
 
                 {{ macro.displaySourceList(sports_sources)}}
