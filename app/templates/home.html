@@ -1,0 +1,63 @@
+{% extends 'base.html'%}
+{% import 'macros.html' as macro %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width">
+        <meta charset="utf-8">
+        {% block styles%}
+        {{ super() }}
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Castoro&display=swap');
+            body{
+                font-family: 'Castoro', serif;
+                background-image: url('../static/12.jpg');
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-attachment: fixed;
+                height: 100vh;
+            }
+            h3{
+                text-transform: uppercase;
+                text-decoration: underline;
+            }
+            </style>
+        {% endblock %}
+
+    </head>
+    <body>
+            <!-- content block -->
+            {% block content%}
+            <div class="container">
+                <!-- Business News Section  -->
+                <h3 class="text-center">  Business News </h3>
+                <hr>
+
+                {{ macro.displaySourceList(business_sources)}}
+
+                <!-- Tech News Section  -->
+         
+                <h3 class="text-center">  Technology News </h3>
+                 <hr>
+
+                {{ macro.displaySourceList(tech_sources)}}
+
+                <!-- Entertainment News Section  -->
+         
+                <h3 class="text-center">  Entertainment News </h3>
+                <hr>
+
+                {{ macro.displaySourceList(entertainment_sources)}}
+
+                <!-- Sport News Section  -->
+         
+                <h3 class="text-center">  Sports News </h3>
+                <hr>
+
+                {{ macro.displaySourceList(sports_sources)}}
+	
+            </div>
+            {%endblock%}
+
+    </body>
+</html>

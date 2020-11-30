@@ -16,7 +16,7 @@ def index():
 
     title = "News Highlights"
 
-    return render_template('index.html',title = title, business_sources = business_sources,sports_sources = sports_sources,tech_sources = tech_sources,entertainment_sources = entertainment_sources)
+    return render_template('home.html',title = title, business_sources = business_sources,sports_sources = sports_sources,tech_sources = tech_sources,entertainment_sources = entertainment_sources)
 
 @app.route('/articles/<id>')
 def articles(id):
